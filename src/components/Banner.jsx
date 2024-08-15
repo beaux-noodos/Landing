@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { motion } from "framer-motion";
 import { useLocation } from 'react-router-dom';
 
 const Banner = ({ title, link }) => {
@@ -23,12 +24,27 @@ const Banner = ({ title, link }) => {
       }}
     >
       <div className='bg-[#002347] bg-opacity-80 h-[317px] text-center pt-28'>
-        <h1 className='text-white text-5xl font-semibold'>{title}</h1>
-        <div className="mt-4">
+        <motion.h1
+          className='text-white text-5xl font-semibold'
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: false, amount: 0.1 }}
+        >
+          {title}
+        </motion.h1>
+
+        <motion.div
+          className="mt-4"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: false, amount: 0.1 }}
+        >
           <a href="index.html" className="text-white hover:text-gray-300">Home</a>
           <span className="text-white mx-2">/</span>
           <a href="about-us.html" className="text-white hover:text-gray-300">{link}</a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
