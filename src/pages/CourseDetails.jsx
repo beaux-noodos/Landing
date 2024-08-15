@@ -6,6 +6,7 @@ import ReviewCard from "../components/courseDetails/ReviewCard";
 import ReviewForm from "../components/courseDetails/ReviewForm";
 import Footer from "../components/Footer";
 import Navbar from "../components/NavBar";
+import ToTheTop from "../components/ToTheTop";
 
 export const CourseDetails = () => {
 
@@ -61,6 +62,7 @@ export const CourseDetails = () => {
 
     return (
         <>
+            <ToTheTop />
             <Navbar bg='bg-secondary' linkColor='text-white' logo='img/logo2.png' />
             <Banner title='Course Details' link='Courses Details' />
             <div className="flex py-32 px-28 gap-9">

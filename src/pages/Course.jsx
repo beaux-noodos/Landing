@@ -4,10 +4,12 @@ import Features from "../components/features/Features";
 import Footer from "../components/Footer";
 import Navbar from "../components/NavBar";
 import RegistrationArea from "../components/registration/RegistrationArea";
+import ToTheTop from "../components/ToTheTop";
 
 export const Course = () => {
   return (
     <>
+      <ToTheTop />
       <Navbar bg='bg-secondary' linkColor='text-white' logo='img/logo2.png' />
       <Banner title='Courses' link='Courses' />
       <div className="pt-32">
