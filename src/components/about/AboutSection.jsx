@@ -2,18 +2,29 @@
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const AboutSection = () => {
   return (
     <section className="py-20">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center mr-32">
-          <div className="lg:w-1/2">
+          <motion.div
+            className="lg:w-1/2"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, ease: "easeInOut", delay: 0.4 }}
+          >
             <div className="relative w-[540px] ml-28 mt-14">
               <img className="img-fluid w-full" src="img/about.png" alt="About" />
             </div>
-          </div>
-          <div className="mt-8 border-[10px] border-background rounded-md py-[75px] px-[80px] w-[700px]">
+          </motion.div>
+          <motion.div
+            className="mt-8 border-[10px] border-background rounded-md py-[75px] px-[80px] w-[700px]"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+          >
             <div className="h_blog_text">
               <div className="text-left">
                 <h4 className="text-3xl font-bold mb-4 text-secondary">Welcome to our Institute</h4>
@@ -30,7 +41,7 @@ const AboutSection = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
