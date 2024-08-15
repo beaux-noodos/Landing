@@ -14,7 +14,7 @@ const TrainerCard = ({ image, name, designation, description, socialLinks }) => 
         <p className="text-gray-400 mb-6">{description}</p>
         <div className="flex justify-center space-x-4">
           {socialLinks.map(({ href, icon }, index) => (
-            <a key={index} href={href} className="text-gray-600 hover:text-gray-800">
+            <a key={index} href={href} className="text-gray-300 hover:text-primary">
               <FontAwesomeIcon icon={icon} />
             </a>
           ))}
