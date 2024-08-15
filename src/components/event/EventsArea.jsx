@@ -25,7 +25,7 @@ const EventsArea = () => {
   return (
     <section className="py-32 bg-secondary">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-14">
           <h2 className="text-3xl font-bold mb-3 text-white">Upcoming Events</h2>
           <p className="text-gray-400">
             Replenish man have thing gathering lights yielding shall you
