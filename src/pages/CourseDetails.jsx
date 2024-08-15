@@ -7,6 +7,7 @@ import ReviewForm from "../components/courseDetails/ReviewForm";
 import Footer from "../components/Footer";
 import Navbar from "../components/NavBar";
 import ToTheTop from "../components/ToTheTop";
+import { motion } from 'framer-motion';
 
 export const CourseDetails = () => {
 
@@ -67,29 +68,54 @@ export const CourseDetails = () => {
             <Banner title='Course Details' link='Courses Details' />
             <div className="flex py-32 px-28 gap-9">
                 <div>
-                    <img src="./img/courses/course-details.jpg" alt="" />
+                    <motion.img
+                        src="./img/courses/course-details.jpg"
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, ease: "easeInOut" }}
+                    />
                     <div>
                         <CourseText title="Objectives" content={objectivesContent} />
                         <CourseText title="Eligibility" content={eligibilityContent} />
                     </div>
-                    <div>
+                    <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, ease: "easeInOut" }}
+                    >
                         <h4 className="text-2xl font-semibold pb-2 mb-5 mt-10 text-secondary border-b">Course Outline</h4>
                         {courseOutline.map((lesson, index) => (
                             <Lesson key={index} title={lesson} />
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
                 <div>
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, ease: "easeInOut" }}
+                    >
                         <CourseInfo {...courseInfo} />
-                        <a href="#" className="block text-center border border-secondary bg-secondary hover:bg-transparent text-white hover:text-secondary text-xs font-semibold py-4 mb-8">ENROLL THE COURSE</a>
-                    </div>
-                    <ReviewForm />
-                    <div>
+                        <a href="#" className="block text-center border border-secondary bg-secondary hover:bg-transparent text-white hover:text-secondary text-xs font-semibold py-4 mb-8">
+                            ENROLL THE COURSE
+                        </a>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, ease: "easeInOut" }}
+                    >
+                        <ReviewForm />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, ease: "easeInOut" }}
+                    >
                         {reviews.map((review, index) => (
                             <ReviewCard key={index} {...review} />
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             <Footer />
