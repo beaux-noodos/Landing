@@ -19,7 +19,7 @@ const CourseCard = ({
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    navigate("/course-details");
+    navigate("/course-details#banner");
   };
 
   return (

@@ -1,10 +1,23 @@
 // src/components/HomeBanner.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 const HomeBanner = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
   return (
     <section
+      id="banner"
       style={{
         backgroundImage: 'url("/img/banner/home-banner.jpg")',
         backgroundSize: "cover",

@@ -25,16 +25,16 @@ const Navbar = ({ bg, linkColor, logo }) => {
     <nav className={`fixed flex z-20 justify-between w-full px-32 py-4 transition-all duration-300 ${scrolled ? bg : 'bg-transparent'
       }`}
     >
-      <Link to="/" className="flex items-center">
+      <Link to="/home#banner" className="flex items-center">
         <img src={logo} alt="Logo" className="h-[38] w-[136]" />
       </Link>
       <div
         className={`lg:flex lg:items-center lg:space-x-11 font-semibold ${linkColor}`}
       >
-        <Link to="/" className="hover:text-primary">Home</Link>
-        <Link to="/about-us" className="hover:text-primary">About</Link>
-        <Link to="/courses" className="hover:text-primary">Courses</Link>
-        <Link to="/contact" className="hover:text-primary">Contact</Link>
+        <Link to="/home#banner" className="hover:text-primary">Home</Link>
+        <Link to="/about-us#banner" className="hover:text-primary">About</Link>
+        <Link to="/courses#banner" className="hover:text-primary">Courses</Link>
+        <Link to="/contact#banner" className="hover:text-primary">Contact</Link>
       </div>
     </nav>
   );
