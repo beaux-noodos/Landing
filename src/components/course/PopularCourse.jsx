@@ -6,7 +6,7 @@ const courses = [
   {
     imgSrc: 'img/courses/c1.jpg',
     price: 25,
-    tag: 'Design',
+    tag: 'DESIGN',
     title: 'Custom Product Design',
     description: 'One make creepeth man bearing their one firmament won’t fowl meat over sea',
     authorImg: 'img/courses/author1.png',
@@ -17,7 +17,7 @@ const courses = [
   {
     imgSrc: 'img/courses/c2.jpg',
     price: 25,
-    tag: 'Design',
+    tag: 'DESIGN',
     title: 'Social Media Network',
     description: 'One make creepeth man bearing their one firmament won’t fowl meat over sea',
     authorImg: 'img/courses/author2.png',
@@ -28,7 +28,7 @@ const courses = [
   {
     imgSrc: 'img/courses/c3.jpg',
     price: 25,
-    tag: 'Design',
+    tag: 'DESIGN',
     title: 'Computer Engineering',
     description: 'One make creepeth man bearing their one firmament won’t fowl meat over sea',
     authorImg: 'img/courses/author3.png',

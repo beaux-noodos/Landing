@@ -13,17 +13,17 @@ const CourseCard = ({ imgSrc, price, tag, title, description, authorImg, authorN
 
   return (
     <div
-      className="overflow-hidden bg-background h-[557px] w-[330px] hover:shadow-2xl hover:shadow-gray-200 cursor-pointer"
+      className="overflow-hidden bg-background h-[557px] w-[326px] hover:shadow-2xl hover:shadow-gray-200 cursor-pointer"
       onClick={handleCardClick}
     >
-      <div>
+      <div className=''>
         <img className="w-full h-64 object-cover" src={imgSrc} alt={title} />
       </div>
       <div className="p-6">
-        <span className="price text-xl font-bold text-secondary">${price}</span>
-        <span className="tag mb-4 block text-sm text-gray-600">{tag}</span>
+        <span className="text-xl font-bold text-center text-secondary hover:text-primary bg-primary hover:bg-secondary px-3.5 py-5 rounded-full ml-56">${price}</span>
+        <span className="mb-4 block text-xs text-white bg-secondary w-20 text-center py-1">{tag}</span>
         <h4 className="mb-3 text-lg font-semibold">
-          <a href="course-details.html" className="text-secondary">{title}</a>
+          <a href="course-details.html" className="text-secondary hover:text-primary">{title}</a>
         </h4>
         <p className="text-gray-700">{description}</p>
         <div className="flex justify-between items-center mt-4">
