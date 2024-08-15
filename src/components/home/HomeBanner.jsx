@@ -1,5 +1,6 @@
 // src/components/HomeBanner.jsx
-import React from 'react';
+import React from "react";
+import { motion } from "framer-motion";
 
 const HomeBanner = () => {
   return (
@@ -8,27 +9,47 @@ const HomeBanner = () => {
         backgroundImage: 'url("/img/banner/home-banner.jpg")',
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundAttachment: "fixed",
         minHeight: "900px",
+        
       }}
       className="bg-gray-100 pt-64"
     >
       <div className="container mx-auto">
         <div className="flex justify-center">
           <div className="text-center">
-            <p className="font-semibold text-xl text-secondary">
+            <motion.p
+              className="font-semibold text-xl text-secondary"
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: false, amount: 0.1 }}
+            >
               BEST ONLINE EDUCATION SERVICE IN THE WORLD
-            </p>
-            <h2 className="text-5xl text-secondary font-semibold mt-6 mb-12">
+            </motion.p>
+            <motion.h2
+              className="text-5xl text-secondary font-semibold mt-6 mb-12"
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: false, amount: 0.1 }}
+            >
               ONE STEP AHEAD THIS SEASON
-            </h2>
-            <div className="flex justify-center gap-4">
-              <button className="bg-secondary border border-secondary text-primary text-xs font-semibold px-12 py-4 rounded-lg hover:bg-transparent hover:text-secondary">
+            </motion.h2>
+            <motion.div
+              className="flex justify-center gap-4"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: false, amount: 0.1 }}
+            >
+              <motion.button className="bg-secondary border border-secondary text-primary text-xs font-semibold px-12 py-4 rounded-lg hover:bg-transparent hover:text-secondary">
                 LEARN MORE
-              </button>
-              <button className="bg-primary border border-primary text-secondary text-xs font-semi  bold px-12 py-2 rounded-lg hover:bg-transparent hover:text-primary">
+              </motion.button>
+              <motion.button className="bg-primary border border-primary text-secondary text-xs font-semi  bold px-12 py-2 rounded-lg hover:bg-transparent hover:text-primary">
                 SEE COURSE
-              </button>
-            </div>
+              </motion.button>
+            </motion.div>
           </div>
         </div>
       </div>
