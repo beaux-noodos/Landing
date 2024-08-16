@@ -17,6 +17,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "autoprefixer": "^10.4.20",
     "aws-amplify": "^6.5.1",
+    "axios": "^1.7.4",
     "framer-motion": "^11.3.28",
     "postcss": "^8.4.41",
     "react": "^18.3.1",
