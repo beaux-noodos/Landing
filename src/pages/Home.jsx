@@ -13,7 +13,7 @@ export const Home = () => {
       <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo.png' />
       <HomeBanner />
       <Features bg='bg-background' titleColor='text-secondaryGreen'/>
-      <PopularProject />
+      <PopularProject bg='bg-primaryGreen' textColor='text-background' />
       <TestimonialsSection />
       <Footer />
     </>

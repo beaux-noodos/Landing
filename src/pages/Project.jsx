@@ -11,7 +11,7 @@ export const Project = () => {
       <ToTheTop />
       <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo2.png' />
       <Banner title='Projects' link='Projects' />
-      <PopularProject />
+      <PopularProject bg='bg-background' textColor='text-secondaryGreen'/>
       <Features />
       <Footer />
     </>
