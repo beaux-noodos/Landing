@@ -2,30 +2,30 @@
 import React from "react";
 import FeatureCard from "./FeaturesCard";
 import {
-  faBookOpen,
   faEarth,
-  faGraduationCap,
+  faHandHoldingDollar,
+  faMessage,
 } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 
 const features = [
   {
-    icon: faGraduationCap,
-    title: "Scholarship Facility",
+    icon: faHandHoldingDollar,
+    title: "Personalized Recommendations",
     description:
-      "One make creepeth, man bearing theira firmament won't great heaven",
-  },
-  {
-    icon: faBookOpen,
-    title: "Sell Online Course",
-    description:
-      "One make creepeth, man bearing theira firmament won't great heaven",
+      "Receive project suggestions tailored to your interests, based on your past investments and preferences.",
   },
   {
     icon: faEarth,
-    title: "Global Certification",
+    title: "Real-time Project Tracking",
     description:
-      "One make creepeth, man bearing theira firmament won't great heaven",
+      "Track the progress of your investment projects at a glance: progress, number of likes, completion date, and much more.",
+  },
+  {
+    icon: faMessage,
+    title: "Integrated AI Assistant",
+    description:
+      "Un chat intelligent qui répond à toutes vos questions sur l'application et vous aide à trouver rapidement les projets qui vous intéressent.",
   },
 ];
 
@@ -42,7 +42,7 @@ const Features = ({ bg, titleColor }) => {
               transition={{ duration: 0.6, ease: "easeInOut" }}
               viewport={{ once: false, amount: 0.1 }}
             >
-              Awesome Feature
+              Awesome Features
             </motion.h2>
             <motion.p
               className="text-gray-400"
@@ -51,7 +51,7 @@ const Features = ({ bg, titleColor }) => {
               transition={{ duration: 0.6, ease: "easeInOut" ,delay:0.2}}
               viewport={{ once: false, amount: 0.1 }}
             >
-              Replenish man have thing gathering lights yielding shall you
+              Everything you need to finance easily and efficiently
             </motion.p>
           </div>
         </div>
