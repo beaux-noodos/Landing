@@ -8,7 +8,7 @@ export const Contact = () => {
     return (
         <>
             <ToTheTop />
-            <Navbar bg='bg-secondary' linkColor='text-white' logo='img/logo2.png' />
+            <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo2.png' />
             <Banner title='Contact us' link='Contact' />
             <ContactSection />
             <Footer />

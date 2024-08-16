@@ -10,10 +10,10 @@ export const About = () => {
   return (
     <>
       <ToTheTop />
-      <Navbar bg='bg-secondary' linkColor='text-white' logo='img/logo2.png' />
+      <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo2.png' />
       <Banner title='About us' link='About Us' />
       <AboutSection />
-      <Features bg='bg-secondary' titleColor='text-white'/>
+      <Features bg='bg-primaryGreen' titleColor='text-white'/>
       <TestimonialsSection />
       <Footer />
     </>

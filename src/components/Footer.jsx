@@ -2,13 +2,13 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="footer-area section_gap bg-secondary text-white py-8">
+    <footer className="footer-area section_gap bg-primaryGreen text-background py-8">
       <div className="container mx-auto">
         <div className="flex flex-wrap">
           {/* Top Products */}
           <div className="lg:w-1/6 md:w-1/2 p-4">
             <h4 className="text-lg font-semibold mb-4">Top Products</h4>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-background">
               <li><a href="#" className="hover:text-gray-400">Managed Website</a></li>
               <li><a href="#" className="hover:text-gray-400">Manage Reputation</a></li>
               <li><a href="#" className="hover:text-gray-400">Power Tools</a></li>
@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="lg:w-1/6 md:w-1/2 p-4">
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-background">
               <li><a href="#" className="hover:text-gray-400">Jobs</a></li>
               <li><a href="#" className="hover:text-gray-400">Brand Assets</a></li>
               <li><a href="#" className="hover:text-gray-400">Investor Relations</a></li>
@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Features */}
           <div className="lg:w-1/6 md:w-1/2 p-4">
             <h4 className="text-lg font-semibold mb-4">Features</h4>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-background">
               <li><a href="#" className="hover:text-gray-400">Jobs</a></li>
               <li><a href="#" className="hover:text-gray-400">Brand Assets</a></li>
               <li><a href="#" className="hover:text-gray-400">Investor Relations</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
           {/* Resources */}
           <div className="lg:w-1/6 md:w-1/2 p-4">
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-background">
               <li><a href="#" className="hover:text-gray-400">Guides</a></li>
               <li><a href="#" className="hover:text-gray-400">Research</a></li>
               <li><a href="#" className="hover:text-gray-400">Experts</a></li>
@@ -52,7 +52,7 @@ const Footer = () => {
           {/* Newsletter */}
           <div className="lg:w-2/6 md:w-1/2 p-4">
             <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
-            <p className="mb-4 text-gray-600">You can trust us. We only send promo offers.</p>
+            <p className="mb-4 text-background">You can trust us. We only send promo offers.</p>
             <form
               target="_blank"
               action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"

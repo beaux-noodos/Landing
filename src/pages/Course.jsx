@@ -10,12 +10,9 @@ export const Course = () => {
   return (
     <>
       <ToTheTop />
-      <Navbar bg='bg-secondary' linkColor='text-white' logo='img/logo2.png' />
+      <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo2.png' />
       <Banner title='Courses' link='Courses' />
-      <div className="pt-32">
-        <PopularCourses />
-      </div>
-      <RegistrationArea />
+      <PopularCourses />
       <Features />
       <Footer />
     </>

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const FeatureCard = ({ icon, title, description }) => {
   return (
     <motion.div
-      className="bg-background py-10 px-9 max-w-xs"
+      className="bg-background border border-secondaryGreen py-10 px-9 max-w-xs"
       whileHover={{ scale: 1.05 }}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -16,11 +16,11 @@ const FeatureCard = ({ icon, title, description }) => {
 
     >
       <div className="mb-4">
-        <span className="text-4xl text-secondary">
+        <span className="text-4xl text-secondaryGreen">
           <FontAwesomeIcon icon={icon} />
         </span>
       </div>
-      <h4 className="text-xl text-secondary font-semibold mt-3 mb-2">
+      <h4 className="text-xl text-secondaryGreen font-semibold mt-3 mb-2">
         {title}
       </h4>
       <p className="text-gray-600">{description}</p>

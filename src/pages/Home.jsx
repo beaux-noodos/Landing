@@ -13,12 +13,10 @@ export const Home = () => {
   return (
     <>
       <ToTheTop />
-      <Navbar bg='bg-white' linkColor='text-secondary' logo='img/logo.png' />
+      <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo.png' />
       <HomeBanner />
-      <Features bg='bg-white' titleColor='text-secondary'/>
+      <Features bg='bg-background' titleColor='text-secondaryGreen'/>
       <PopularCourses />
-      <RegistrationArea />
-      <TrainerArea />
       <EventsArea />
       <TestimonialsSection />
       <Footer />
