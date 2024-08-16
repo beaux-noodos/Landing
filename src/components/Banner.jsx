@@ -18,12 +18,12 @@ const Banner = ({ title, link }) => {
     <section
       id='banner'
       style={{
-        backgroundImage: 'url("/img/banner/banner.jpg")',
-        backgroundSize: "contain",
+        backgroundImage: 'url("/images/banner3.jpg")',
+        backgroundSize: "cover",
         backgroundRepeat: "no-repeat"
       }}
     >
-      <div className='bg-[#002347] bg-opacity-80 h-[317px] text-center pt-28'>
+      <div className='bg-black bg-opacity-40 h-[317px] text-center pt-28'>
         <motion.h1
           className='text-white text-5xl font-semibold'
           initial={{ opacity: 0, y: -20 }}
