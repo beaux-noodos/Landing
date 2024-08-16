@@ -31,7 +31,7 @@ const features = [
 
 const Features = ({ bg, titleColor }) => {
   return (
-    <section className={`lg:pt-32 pt-10 pb-24 overflow-hidden ${bg}`}>
+    <section className={`lg:pt-32 pt-10 px-3 pb-24 overflow-hidden ${bg}`}>
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <div className="max-w-2xl mx-auto">
