@@ -34,7 +34,7 @@ const HomeBanner = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: false, amount: 0.1 }}
           >
-            BEST ONLINE EDUCATION SERVICE IN THE WORLD
+            The Best Choice for Investing in a Sustainable Future
           </motion.p>
           <motion.h2
             className="lg:text-5xl text-xl text-background font-semibold mt-6 mb-12"
@@ -43,7 +43,7 @@ const HomeBanner = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: false, amount: 0.1 }}
           >
-            ONE STEP AHEAD THIS SEASON
+            INVEST IN A BETTER TOMORROW
           </motion.h2>
           <motion.div
             className="flex flex-col lg:flex-row gap-4 justify-center"
@@ -53,10 +53,10 @@ const HomeBanner = () => {
             viewport={{ once: false, amount: 0.1 }}
           >
             <motion.button className="bg-primaryGreen border border-secondaryGreen text-background text-xs font-semibold w-full max-w-[200px] px-8 py-4 rounded-lg hover:bg-transparent">
-              LEARN MORE
+              <a href="/about-us">LEARN MORE</a>
             </motion.button>
             <motion.button className="bg-secondaryBrown border border-secondaryBrown text-background text-xs font-semibold w-full max-w-[200px] px-8 py-4 rounded-lg hover:bg-transparent hover:text-primary">
-              SEE COURSE
+              <a href="/projects">SEE PROJECTS</a>
             </motion.button>
           </motion.div>
         </div>
