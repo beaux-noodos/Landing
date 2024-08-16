@@ -1,10 +1,12 @@
 import React from "react";
 import EventCard from "./EventCard";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const events = [
   {
-    image: "img/event/e1.jpg",
+    image: "images/event.jpg",
     date: { day: "15", month: "Jun" },
     time: "12:00 AM - 12:30 AM",
     location: "Hilton Quebec",
@@ -13,7 +15,7 @@ const events = [
     link: "#",
   },
   {
-    image: "img/event/e2.jpg",
+    image: "images/event2.jpg",
     date: { day: "15", month: "Jun" },
     time: "12:00 AM - 12:30 AM",
     location: "Hilton Quebec",
@@ -25,7 +27,7 @@ const events = [
 
 const EventsArea = () => {
   return (
-    <section className="py-32 bg-secondary">
+    <section className="overflow-hidden lg:py-24 py-10 bg-primaryGreen">
       <div className="container mx-auto">
         <motion.div
           className="text-center mb-14"
@@ -34,7 +36,7 @@ const EventsArea = () => {
           transition={{ duration: 0.6, ease: "easeInOut" }}
           viewport={{ once: false, amount: 0.1 }}
         >
-          <h2 className="text-3xl font-bold mb-3 text-white ">
+          <h2 className="text-3xl font-bold mb-3 text-background ">
             Upcoming Events
           </h2>
           <p className="text-gray-400">
@@ -66,10 +68,10 @@ const EventsArea = () => {
         >
           <a
             href="#"
-            className="event-link flex items-center justify-center text-primary"
+            className="event-link flex items-center justify-center text-primary hover:scale-105"
           >
             VIEW ALL EVENT{" "}
-            <img className="ml-2" src="img/next.png" alt="Next" />
+            <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
           </a>
         </motion.div>
       </div>

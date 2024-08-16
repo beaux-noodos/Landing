@@ -8,7 +8,7 @@ const ToTheTop = () => {
     };
 
     return (
-        <a href="#" onClick={handleClick} className="fixed z-20 mt-[95vh] ml-[95vw] text-center bg-secondary text-primary rounded-full px-2 py-0.5 animate-bounce"><FontAwesomeIcon icon={faArrowUp} /></a>
+        <a href="#" onClick={handleClick} className="fixed z-20 lg:mt-[95vh] mt-[95vh] lg:ml-[95vw] ml-[90vw] text-center bg-secondaryGreen text-background rounded-full px-2 py-0.5 animate-bounce"><FontAwesomeIcon icon={faArrowUp} /></a>
     );
 };
 

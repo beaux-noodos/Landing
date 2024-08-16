@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const courses = [
   {
-    imgSrc: "img/courses/c1.jpg",
+    imgSrc: "images/citron.jpg",
     price: 25,
     tag: "DESIGN",
     title: "Custom Product Design",
@@ -17,7 +17,7 @@ const courses = [
     likes: 35,
   },
   {
-    imgSrc: "img/courses/c2.jpg",
+    imgSrc: "images/carotte.jpg",
     price: 25,
     tag: "DESIGN",
     title: "Social Media Network",
@@ -29,7 +29,7 @@ const courses = [
     likes: 35,
   },
   {
-    imgSrc: "img/courses/c3.jpg",
+    imgSrc: "images/ble.jpg",
     price: 25,
     tag: "DESIGN",
     title: "Computer Engineering",
@@ -45,10 +45,10 @@ const courses = [
 const PopularCourses = () => {
   return (
     <section>
-      <div className="container mx-auto pb-24">
-        <div className="text-center mb-24">
+      <div className="container overflow-hidden mx-auto mt-16 pb-24">
+        <div className="text-center lg:mb-24 mb-10">
           <motion.h2
-            className="text-4xl text-secondary font-bold mb-3"
+            className="text-4xl text-secondaryGreen font-bold mb-3"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
@@ -66,7 +66,7 @@ const PopularCourses = () => {
             Replenish man have thing gathering lights yielding shall you
           </motion.p>
         </div>
-        <div className="flex gap-12 justify-center">
+        <div className="flex flex-wrap gap-12 justify-center">
           {courses.map((course, index) => (
             <CourseCard
               key={index}

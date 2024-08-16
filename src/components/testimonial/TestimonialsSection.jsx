@@ -18,7 +18,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-32">
+    <section className="lg:py-32 py-10 overflow-hidden">
       <div className="container mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -26,13 +26,13 @@ const TestimonialsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold mb-3 text-secondary">Client say about me</h2>
+          <h2 className="text-3xl font-bold mb-3 text-primaryGreen">Client say about me</h2>
           <p className="text-gray-600">
             Replenish man have thing gathering lights yielding shall you
           </p>
         </motion.div>
         <motion.div
-          className="flex gap-14 justify-center"
+          className="flex flex-wrap gap-14 justify-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

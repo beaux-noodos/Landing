@@ -15,8 +15,8 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeInOut", delay: 0.4 }}
           >
-            <div className="relative w-[540px] ml-28 mt-14">
-              <img className="img-fluid w-full" src="img/about.png" alt="About" />
+            <div className="relative w-[540px] ml-24 mt-14">
+              <img className="img-fluid w-full" src="images/about-us.jpg" alt="About" />
             </div>
           </motion.div>
           <motion.div
@@ -27,7 +27,7 @@ const AboutSection = () => {
           >
             <div className="h_blog_text">
               <div className="text-left">
-                <h4 className="text-3xl font-bold mb-4 text-secondary">Welcome to our Institute</h4>
+                <h4 className="text-3xl font-bold mb-4 text-primaryGreen">Welcome to our Institute</h4>
                 <p className="mb-8 text-gray-600">
                   Subdue whales void god which living don't midst lesser yielding over lights whose.
                   Cattle greater brought sixth fly den dry good tree isn't seed stars were.
@@ -36,7 +36,7 @@ const AboutSection = () => {
                   Subdue whales void god which living don't midst lesser yieldi over lights whose.
                   Cattle greater brought sixth fly den dry good tree isn't seed stars were the boring.
                 </p>
-                <a className="inline-flex items-center text-secondary bg-primary px-12 py-4 rounded-md hover:bg-secondary hover:text-primary font-semibold text-xs" href="#">
+                <a className="inline-flex items-center text-background bg-primaryGreen px-12 py-4 rounded-md hover:bg-secondaryBrown hover:text-background font-semibold text-xs" href="#">
                   LEARN MORE <FontAwesomeIcon className='ml-2' icon={faArrowRight} />
                 </a>
               </div>

@@ -31,7 +31,7 @@ const features = [
 
 const Features = ({ bg, titleColor }) => {
   return (
-    <section className={`pt-32 pb-24 ${bg}`}>
+    <section className={`lg:pt-32 pt-10 pb-24 overflow-hidden ${bg}`}>
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <div className="max-w-2xl mx-auto">
@@ -45,7 +45,7 @@ const Features = ({ bg, titleColor }) => {
               Awesome Feature
             </motion.h2>
             <motion.p
-              className="text-gray-600"
+              className="text-gray-400"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeInOut" ,delay:0.2}}

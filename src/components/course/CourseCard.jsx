@@ -24,7 +24,7 @@ const CourseCard = ({
 
   return (
     <motion.div
-      className="overflow-hidden bg-background h-[557px] w-[326px] hover:shadow-2xl hover:shadow-gray-200 cursor-pointer"
+      className="overflow-hidden text-center bg-background h-auto w-[326px] hover:shadow-2xl hover:shadow-gray-200 cursor-pointer"
       onClick={handleCardClick}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -39,23 +39,17 @@ const CourseCard = ({
           whileHover={{ scale: 1.05 }}
         />
       </div>
-      <div className="p-6">
-        <span className="text-xl font-bold text-center text-secondary hover:text-primary bg-primary hover:bg-secondary px-3.5 py-5 rounded-full ml-56 transition duration-300 ease-in-out">
-          ${price}
-        </span>
-        <span className="mb-4 block text-xs text-white bg-secondary w-20 text-center py-1">
-          {tag}
-        </span>
-        <h4 className="mb-3 text-lg font-semibold">
+      <div className="pt-6">
+        <h4 className="mb-3 text-lg font-semibold w-full">
           <a
-            href="course-details.html"
-            className="text-secondary hover:text-primary"
+            href="#"
+            className="text-secondaryGreen"
           >
             {title}
           </a>
         </h4>
         <p className="text-gray-700">{description}</p>
-        <div className="flex justify-between items-center mt-4">
+        <div className="flex justify-between items-center mt-4 px-6">
           <div className="flex items-center">
             <img
               className="w-8 h-8 rounded-full mr-2"
@@ -75,6 +69,7 @@ const CourseCard = ({
             </span>
           </div>
         </div>
+        <button className="text-background bg-primaryGreen hover:bg-secondaryBrown w-full py-1 mt-8">INVEST</button>
       </div>
     </motion.div>
   );
