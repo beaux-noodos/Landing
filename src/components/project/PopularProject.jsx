@@ -1,89 +1,101 @@
 import React from "react";
+import EventCard from "./ProjectCard";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    imgSrc: "images/citron.jpg",
-    price: 25,
-    tag: "DESIGN",
-    title: "Custom Product Design",
+    image: "images/event.jpg",
+    date: { day: "15", month: "Jun" },
+    time: "12:00 AM - 12:30 AM",
+    location: "Hilton Quebec",
     description:
-      "One make creepeth man bearing their one firmament won’t fowl meat over sea",
-    authorImg: "img/courses/author1.png",
-    authorName: "Cameron",
-    students: 25,
-    likes: 35,
+      "One make creepeth man for so bearing their firmament won’t fowl meat over seas great",
+    link: "/project-details",
   },
   {
-    imgSrc: "images/carotte.jpg",
-    price: 25,
-    tag: "DESIGN",
-    title: "Social Media Network",
+    image: "images/event2.jpg",
+    date: { day: "15", month: "Jun" },
+    time: "12:00 AM - 12:30 AM",
+    location: "Hilton Quebec",
     description:
-      "One make creepeth man bearing their one firmament won’t fowl meat over sea",
-    authorImg: "img/courses/author2.png",
-    authorName: "Cameron",
-    students: 25,
-    likes: 35,
+      "One make creepeth man for so bearing their firmament won’t fowl meat over seas great",
+    link: "/project-details",
   },
   {
-    imgSrc: "images/ble.jpg",
-    price: 25,
-    tag: "DESIGN",
-    title: "Computer Engineering",
+    image: "images/ble.jpg",
+    date: { day: "15", month: "Jun" },
+    time: "12:00 AM - 12:30 AM",
+    location: "Hilton Quebec",
     description:
-      "One make creepeth man bearing their one firmament won’t fowl meat over sea",
-    authorImg: "img/courses/author3.png",
-    authorName: "Cameron",
-    students: 25,
-    likes: 35,
+      "One make creepeth man for so bearing their firmament won’t fowl meat over seas great",
+    link: "/project-details",
+  },
+  {
+    image: "images/citron.jpg",
+    date: { day: "15", month: "Jun" },
+    time: "12:00 AM - 12:30 AM",
+    location: "Hilton Quebec",
+    description:
+      "One make creepeth man for so bearing their firmament won’t fowl meat over seas great",
+    link: "/project-details",
   },
 ];
 
-const PopularProjects = () => {
+const PopularProject = () => {
   return (
-    <section>
-      <div className="container overflow-hidden mx-auto mt-16 pb-24">
-        <div className="text-center lg:mb-24 mb-10">
-          <motion.h2
-            className="text-4xl text-secondaryGreen font-bold mb-3"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
-            viewport={{ once: false, amount: 0.1 }}
-          >
-            Our Popular Projects
-          </motion.h2>
-          <motion.p
-            className="text-gray-600"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
-            viewport={{ once: false, amount: 0.1 }}
-          >
+    <section className="overflow-hidden lg:py-24 py-10 bg-primaryGreen">
+      <div className="container mx-auto">
+        <motion.div
+          className="text-center mb-14"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          viewport={{ once: false, amount: 0.1 }}
+        >
+          <h2 className="text-3xl font-bold mb-3 text-background ">
+            Popular Projects
+          </h2>
+          <p className="text-gray-400">
             Replenish man have thing gathering lights yielding shall you
-          </motion.p>
-        </div>
-        <div className="flex flex-wrap gap-12 justify-center">
-          {projects.map((project, index) => (
-            <ProjectCard
+          </p>
+        </motion.div>
+        <motion.div
+          className="flex flex-wrap justify-center gap-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          {projects.map((event, index) => (
+            <motion.div
               key={index}
-              imgSrc={project.imgSrc}
-              price={project.price}
-              tag={project.tag}
-              title={project.title}
-              description={project.description}
-              authorImg={project.authorImg}
-              authorName={project.authorName}
-              students={project.students}
-              likes={project.likes}
-            />
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.03 }}
+              transition={{ duration: 0.3 }}
+            >
+              <ProjectCard {...event} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
+        <motion.div
+          className="text-center pt-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <a
+            href="#"
+            className="event-link flex items-center justify-center text-primary hover:scale-105"
+          >
+            VIEW MORE PROJECTS{" "}
+            <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
+          </a>
+        </motion.div>
       </div>
     </section>
   );
 };
 
-export default PopularProjects;
+export default PopularProject;

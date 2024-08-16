@@ -1,77 +1,39 @@
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
-import { faUserGroup } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+// src/components/EventCard.jsx
+import { faClock } from '@fortawesome/free-regular-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 
-const ProjectCard = ({
-  imgSrc,
-  price,
-  tag,
-  title,
-  description,
-  authorImg,
-  authorName,
-  students,
-  likes,
-}) => {
-  const navigate = useNavigate();
-
-  const handleCardClick = () => {
-    navigate("/project-details#banner");
-  };
-
+const ProjectCard = ({ image, date, time, location, description, link }) => {
   return (
-    <motion.div
-      className="overflow-hidden text-center bg-background h-auto w-[326px] hover:shadow-2xl hover:shadow-gray-200 cursor-pointer"
-      onClick={handleCardClick}
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      viewport={{ once: false, amount: 0.5 }}
+    <div
+      style={{
+        backgroundImage: `url(${image})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat"
+      }}
+      className="relative lg:w-[555px] lg:h-[400px]"
     >
-      <div className="">
-        <motion.img
-          className="w-full h-64 object-cover"
-          src={imgSrc}
-          alt={title}
-          whileHover={{ scale: 1.05 }}
-        />
-      </div>
-      <div className="pt-6">
-        <h4 className="mb-3 text-lg font-semibold w-full">
-          <a
-            href="#"
-            className="text-secondaryGreen"
-          >
-            {title}
-          </a>
-        </h4>
-        <p className="text-gray-700">{description}</p>
-        <div className="flex justify-between items-center mt-4 px-6">
-          <div className="flex items-center">
-            <img
-              className="w-8 h-8 rounded-full mr-2"
-              src={authorImg}
-              alt={authorName}
-            />
-            <span className="text-sm font-medium">{authorName}</span>
+      <div className='bg-black bg-opacity-20 backdrop-blur-sm px-6 py-8 text-white w-72 ml-auto'>
+        <div className='flex mb-6'>
+          <div className='flex flex-col border-r-2 pr-3'>
+            <span className='text-primary font-bold text-3xl'>{date.day}</span> {date.month}
           </div>
-          <div className="flex space-x-4">
-            <span className="text-sm text-gray-600">
-              <FontAwesomeIcon className="mr-2" icon={faUserGroup} />
-              {students}
-            </span>
-            <span className="text-sm text-gray-600">
-              <FontAwesomeIcon className="mr-2" icon={faHeart} />
-              {likes}
-            </span>
+          <div className='flex flex-col pl-3 gap-2'>
+            <p><FontAwesomeIcon icon={faClock} className='mr-2 text-sm'/>{time}</p>
+            <p><FontAwesomeIcon icon={faLocationDot} className='mr-2 text-sm'/>{location}</p>
           </div>
         </div>
-        <button className="text-background bg-primaryGreen hover:bg-secondaryBrown w-full py-1 mt-8">INVEST</button>
+        <p className='mb-4'>{description}</p>
+        <a href={link} className='mt-4'>
+          <button className='bg-primaryGreen hover:bg-secondaryBrown text-background text-xs font-semibold px-12 py-4 '>
+            VIEW DETAILS
+          </button>
+        </a>
       </div>
-    </motion.div>
+
+
+    </div>
   );
 };
 
