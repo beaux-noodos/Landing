@@ -64,12 +64,12 @@ export const CourseDetails = () => {
     return (
         <>
             <ToTheTop />
-            <Navbar bg='bg-secondary' linkColor='text-white' logo='img/logo2.png' />
+            <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo2.png' />
             <Banner title='Course Details' link='Courses Details' />
             <div className="flex py-32 px-28 gap-9">
                 <div>
                     <motion.img
-                        src="./img/courses/course-details.jpg"
+                        src="./images/citron.jpg"
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, ease: "easeInOut" }}
@@ -78,16 +78,6 @@ export const CourseDetails = () => {
                         <CourseText title="Objectives" content={objectivesContent} />
                         <CourseText title="Eligibility" content={eligibilityContent} />
                     </div>
-                    <motion.div
-                    initial={{ opacity: 0, x: -50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, ease: "easeInOut" }}
-                    >
-                        <h4 className="text-2xl font-semibold pb-2 mb-5 mt-10 text-secondary border-b">Course Outline</h4>
-                        {courseOutline.map((lesson, index) => (
-                            <Lesson key={index} title={lesson} />
-                        ))}
-                    </motion.div>
                 </div>
                 <div>
                     <motion.div
