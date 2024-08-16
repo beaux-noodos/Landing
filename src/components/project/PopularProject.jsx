@@ -1,9 +1,8 @@
-// src/components/PopularCourses.jsx
 import React from "react";
-import CourseCard from "./CourseCard";
 import { motion } from "framer-motion";
+import ProjectCard from "./ProjectCard";
 
-const courses = [
+const projects = [
   {
     imgSrc: "images/citron.jpg",
     price: 25,
@@ -42,7 +41,7 @@ const courses = [
   },
 ];
 
-const PopularCourses = () => {
+const PopularProjects = () => {
   return (
     <section>
       <div className="container overflow-hidden mx-auto mt-16 pb-24">
@@ -54,7 +53,7 @@ const PopularCourses = () => {
             transition={{ duration: 0.6, ease: "easeInOut" }}
             viewport={{ once: false, amount: 0.1 }}
           >
-            Our Popular Courses
+            Our Popular Projects
           </motion.h2>
           <motion.p
             className="text-gray-600"
@@ -67,18 +66,18 @@ const PopularCourses = () => {
           </motion.p>
         </div>
         <div className="flex flex-wrap gap-12 justify-center">
-          {courses.map((course, index) => (
-            <CourseCard
+          {projects.map((project, index) => (
+            <ProjectCard
               key={index}
-              imgSrc={course.imgSrc}
-              price={course.price}
-              tag={course.tag}
-              title={course.title}
-              description={course.description}
-              authorImg={course.authorImg}
-              authorName={course.authorName}
-              students={course.students}
-              likes={course.likes}
+              imgSrc={project.imgSrc}
+              price={project.price}
+              tag={project.tag}
+              title={project.title}
+              description={project.description}
+              authorImg={project.authorImg}
+              authorName={project.authorName}
+              students={project.students}
+              likes={project.likes}
             />
           ))}
         </div>
@@ -87,4 +86,4 @@ const PopularCourses = () => {
   );
 };
 
-export default PopularCourses;
+export default PopularProjects;

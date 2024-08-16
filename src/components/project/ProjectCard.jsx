@@ -5,7 +5,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const CourseCard = ({
+const ProjectCard = ({
   imgSrc,
   price,
   tag,
@@ -19,7 +19,7 @@ const CourseCard = ({
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    navigate("/course-details#banner");
+    navigate("/project-details#banner");
   };
 
   return (
@@ -75,4 +75,4 @@ const CourseCard = ({
   );
 };
 
-export default CourseCard;
+export default ProjectCard;

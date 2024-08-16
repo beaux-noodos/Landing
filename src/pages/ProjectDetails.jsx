@@ -1,19 +1,18 @@
 import Banner from "../components/Banner";
-import CourseInfo from "../components/courseDetails/CourseInfo";
-import CourseText from "../components/courseDetails/CourseText";
-import Lesson from "../components/courseDetails/Lesson";
-import ReviewCard from "../components/courseDetails/ReviewCard";
-import ReviewForm from "../components/courseDetails/ReviewForm";
+import ReviewCard from "../components/projectDetails/ReviewCard";
+import ReviewForm from "../components/projectDetails/ReviewForm";
 import Footer from "../components/Footer";
 import Navbar from "../components/NavBar";
 import ToTheTop from "../components/ToTheTop";
 import { motion } from 'framer-motion';
+import ProjectText from "../components/projectDetails/ProjectText";
+import ProjectInfo from "../components/projectDetails/ProjectInfo";
 
-export const CourseDetails = () => {
+export const ProjectDetails = () => {
 
-    const courseInfo = {
+    const projectInfo = {
         trainerName: "George Mathews",
-        courseFee: 230,
+        price: 230,
         availableSeats: 15,
         schedule: "2.00 pm to 4.00 pm"
     };
@@ -27,18 +26,6 @@ export const CourseDetails = () => {
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. 
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
   `;
-
-    const courseOutline = [
-        "Introduction Lesson",
-        "Basics of HTML",
-        "Getting Know about HTML",
-        "Tags and Attributes",
-        "Basics of CSS",
-        "Getting Familiar with CSS",
-        "Introduction to Bootstrap",
-        "Responsive Design",
-        "Canvas in HTML 5"
-    ];
 
     const reviews = [
         {
@@ -65,7 +52,7 @@ export const CourseDetails = () => {
         <>
             <ToTheTop />
             <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo2.png' />
-            <Banner title='Course Details' link='Courses Details' />
+            <Banner title='Project Details' link='Projects Details' />
             <div className="flex py-32 px-28 gap-9">
                 <div>
                     <motion.img
@@ -75,8 +62,8 @@ export const CourseDetails = () => {
                         transition={{ duration: 0.6, ease: "easeInOut" }}
                     />
                     <div>
-                        <CourseText title="Objectives" content={objectivesContent} />
-                        <CourseText title="Eligibility" content={eligibilityContent} />
+                        <ProjectText title="Objectives" content={objectivesContent} />
+                        <ProjectText title="Eligibility" content={eligibilityContent} />
                     </div>
                 </div>
                 <div>
@@ -85,9 +72,9 @@ export const CourseDetails = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, ease: "easeInOut" }}
                     >
-                        <CourseInfo {...courseInfo} />
+                        <ProjectInfo {...projectInfo} />
                         <a href="#" className="block text-center border border-secondary bg-secondary hover:bg-transparent text-white hover:text-secondary text-xs font-semibold py-4 mb-8">
-                            ENROLL THE COURSE
+                            INVEST
                         </a>
                     </motion.div>
                     <motion.div

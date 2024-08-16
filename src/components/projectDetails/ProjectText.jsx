@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const CourseText = ({ title, content }) => {
+const ProjectText = ({ title, content }) => {
   return (
     <motion.div
       className="mb-8"
@@ -19,4 +19,4 @@ const CourseText = ({ title, content }) => {
   );
 };
 
-export default CourseText;
+export default ProjectText;

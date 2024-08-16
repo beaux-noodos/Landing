@@ -3,9 +3,9 @@ import './index.css'
 
 import { Home } from './pages/Home';
 import { About } from './pages/About';
-import { Course } from './pages/Course';
+import { Project } from './pages/Project';
 import { Contact } from './pages/Contact';
-import { CourseDetails } from './pages/CourseDetails';
+import { ProjectDetails } from './pages/ProjectDetails';
 
 
 
@@ -22,16 +22,16 @@ function App() {
                     element={<About/>}
                 />
                 <Route
-                    path='/courses'
-                    element={<Course/>}
+                    path='/projects'
+                    element={<Project/>}
                 />
                 <Route
                     path='/contact'
                     element={<Contact/>}
                 />
                 <Route
-                    path='/course-details'
-                    element={<CourseDetails/>}
+                    path='/project-details'
+                    element={<ProjectDetails/>}
                 />  
                 <Route path='/' element={<Navigate to='/home' replace/>}/>
             </Routes>

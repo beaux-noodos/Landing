@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CourseInfo = ({ trainerName, courseFee, availableSeats, schedule }) => {
+const ProjectInfo = ({ trainerName, price, availableSeats, schedule }) => {
   return (
     <ul className="flex flex-col gap-3 mb-8 text-gray-500">
       <li className="flex justify-between py-3 px-6 w-80 bg-background">
@@ -8,8 +8,8 @@ const CourseInfo = ({ trainerName, courseFee, availableSeats, schedule }) => {
         <span className='text-secondary font-medium'>{trainerName}</span>
       </li>
       <li className="flex justify-between py-3 px-6 w-80 bg-background">
-        <p>Course Fee</p>
-        <span>${courseFee}</span>
+        <p>Price</p>
+        <span>${price}</span>
       </li>
       <li className="flex justify-between py-3 px-6 w-80 bg-background">
         <p>Available Seats</p>
@@ -23,4 +23,4 @@ const CourseInfo = ({ trainerName, courseFee, availableSeats, schedule }) => {
   );
 };
 
-export default CourseInfo;
+export default ProjectInfo;

@@ -38,7 +38,7 @@ const Navbar = ({ bg, linkColor, logo }) => {
 
   return (
     <>
-      <nav className={`w-5/6 fixed flex backdrop-blur-sm bg-white bg-opacity-10 lg:ml-32 ml-8 justify-between px-6 py-1 mt-4 transition-all duration-300 rounded-full z-40 `}
+      <nav className={`w-5/6 fixed flex backdrop-blur-sm bg-[#344E41] bg-opacity-30 lg:ml-32 ml-8 justify-between px-6 py-1 mt-4 transition-all duration-300 rounded-full z-40 `}
       >
         <Link to="/home#banner" className="flex items-center text-primaryGreen font-bold text-xl lg:mr-96">
           Logo
@@ -47,11 +47,11 @@ const Navbar = ({ bg, linkColor, logo }) => {
           <FontAwesomeIcon icon={faBars} />
         </button>
         <div
-          className={`hidden lg:flex lg:items-center lg:space-x-11 font-semibold ${linkColor}`}
+          className={`hidden lg:flex lg:items-center lg:space-x-11 font-semibold text-background`}
         >
           <Link to="/home#banner" className={getLinkClass('/home')}>Home</Link>
           <Link to="/about-us#banner" className={getLinkClass('/about-us')}>About</Link>
-          <Link to="/courses#banner" className={getLinkClass('/courses')}>Courses</Link>
+          <Link to="/projects#banner" className={getLinkClass('/projects')}>Projects</Link>
           <Link to="/contact#banner" className={getLinkClass('/contact')}>Contact</Link>
           <Link to="#"> <FontAwesomeIcon className='text-background hover:text-primaryGreen bg-primaryGreen hover:bg-background p-1.5 rounded-full' icon={faUser} /></Link>
         </div>
@@ -68,8 +68,8 @@ const Navbar = ({ bg, linkColor, logo }) => {
         <li className={`pl-3 py-2 ${getLinkClassToggle('/about-us')}`} >
           <Link to="/about-us#banner" onClick={toggleMenu}>About</Link>
         </li>
-        <li className={`pl-3 py-2 ${getLinkClassToggle('/courses')}`} >
-          <Link to="/courses#banner" onClick={toggleMenu}>Courses</Link>
+        <li className={`pl-3 py-2 ${getLinkClassToggle('/projects')}`} >
+          <Link to="/projects#banner" onClick={toggleMenu}>Projects</Link>
         </li>
         <li className={`pl-3 py-2 ${getLinkClassToggle('/contact')}`}>
           <Link to="/contact#banner" onClick={toggleMenu}>Contact</Link>
