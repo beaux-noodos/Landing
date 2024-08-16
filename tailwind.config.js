@@ -10,6 +10,10 @@ module.exports = {
         primary: 'var(--primary-color)',
         secondary: 'var(--secondary-color)',
         background: 'var(--background-color)',
+        primaryGreen: 'var(--primary-green-color)',
+        secondaryGreen: 'var(--secondary-green-color)',
+        primaryBrown: 'var(--primary-brown-color)',
+        secondaryBrown: 'var(--secondary-brown-color)',
       }
     },
   },
