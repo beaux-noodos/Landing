@@ -10,10 +10,12 @@ export const About = () => {
   return (
     <>
       <ToTheTop />
-      <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo2.png' />
+      <div className="flex justify-center">
+        <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo.png' />
+      </div>
       <Banner title='About us' link='About-us' />
       <AboutSection />
-      <Features bg='bg-primaryGreen' titleColor='text-white'/>
+      <Features bg='bg-primaryGreen' titleColor='text-white' />
       <TestimonialsSection />
       <Footer />
     </>

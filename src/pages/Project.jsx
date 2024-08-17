@@ -9,9 +9,11 @@ export const Project = () => {
   return (
     <>
       <ToTheTop />
-      <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo2.png' />
+      <div className="flex justify-center">
+        <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo.png' />
+      </div>
       <Banner title='Projects' link='Projects' />
-      <PopularProject bg='bg-background' textColor='text-secondaryGreen'/>
+      <PopularProject bg='bg-background' textColor='text-secondaryGreen' />
       <Features />
       <Footer />
     </>

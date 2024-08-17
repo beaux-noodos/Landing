@@ -8,7 +8,9 @@ export const Contact = () => {
     return (
         <>
             <ToTheTop />
-            <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo2.png' />
+            <div className="flex justify-center">
+                <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo.png' />
+            </div>
             <Banner title='Contact us' link='Contact' />
             <ContactSection />
             <Footer />
