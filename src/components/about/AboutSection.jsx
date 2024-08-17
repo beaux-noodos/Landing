@@ -5,6 +5,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const AboutSection = () => {
+  const appUrl = import.meta.env.VITE_APP_URL;
+  
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -27,15 +29,15 @@ const AboutSection = () => {
           >
             <div className="h_blog_text">
               <div className="text-left">
-                <h4 className="text-3xl font-bold mb-4 text-primaryGreen">Welcome to our Institute</h4>
+                <h4 className="text-3xl font-bold mb-4 text-primaryGreen">Invest In A Better Tomorrow</h4>
                 <p className="mb-8 text-gray-600">
                   At <span className='text-primaryBrown font-bold'>PlanetPulse</span>, we believe in the power of collective commitment to transform the world. We connect passionate individuals with projects that make a difference, whether in the environment, sustainable agriculture, or social initiatives.
                 </p>
                 <p className="mb-8 text-gray-600">
                 Our mission is clear: to enable everyone to invest in a brighter future. Together, let's build a better world, one project at a time.
                 </p>
-                <a className="inline-flex items-center text-background bg-primaryGreen px-12 py-4 rounded-md hover:bg-secondaryBrown hover:text-background font-semibold text-xs" href="#">
-                  LEARN MORE <FontAwesomeIcon className='ml-2' icon={faArrowRight} />
+                <a className="inline-flex items-center text-background bg-primaryGreen px-12 py-4 rounded-md hover:bg-secondaryBrown hover:text-background font-semibold text-xs" href={appUrl}>
+                  SIGN IN <FontAwesomeIcon className='ml-2' icon={faArrowRight} />
                 </a>
               </div>
             </div>
