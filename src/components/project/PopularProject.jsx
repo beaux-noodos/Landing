@@ -51,7 +51,7 @@ const PopularProject = ({ bg, textColor }) => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          {projects.slice(0, 4).map((project, index) => (
+          {projects.slice(0, 2).map((project, index) => (
             <motion.div
               key={index}
               initial={{ scale: 1 }}
