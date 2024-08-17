@@ -4,6 +4,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const AboutSection = () => {
+  const appUrl = import.meta.env.VITE_APP_URL;
+  
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -26,15 +28,15 @@ const AboutSection = () => {
           >
             <div className="h_blog_text">
               <div className="text-left">
-                <h4 className="text-3xl font-bold mb-4 text-primaryGreen">Bienvenue dans notre institut</h4>
+                <h4 className="text-3xl font-bold mb-4 text-primaryGreen">Investir pour un avenir meilleur</h4>
                 <p className="mb-8 text-gray-600">
                   Chez <span className='text-primaryBrown font-bold'>PlanetPulse</span>, nous croyons en la puissance de l'engagement collectif pour transformer le monde. Nous connectons des individus passionnés avec des projets qui font la différence, que ce soit dans l'environnement, l'agriculture durable ou les initiatives sociales.
                 </p>
                 <p className="mb-8 text-gray-600">
                 Notre mission est claire : permettre à chacun d'investir dans un avenir meilleur. Ensemble, construisons un monde meilleur, un projet à la fois.
                 </p>
-                <a className="inline-flex items-center text-background bg-primaryGreen px-12 py-4 rounded-md hover:bg-secondaryBrown hover:text-background font-semibold text-xs" href="#">
-                  EN SAVOIR PLUS <FontAwesomeIcon className='ml-2' icon={faArrowRight} />
+                <a className="inline-flex items-center text-background bg-primaryGreen px-12 py-4 rounded-md hover:bg-secondaryBrown hover:text-background font-semibold text-xs" href={appUrl}>
+                  Se connecter <FontAwesomeIcon className='ml-2' icon={faArrowRight} />
                 </a>
               </div>
             </div>

@@ -5,7 +5,7 @@ import React from 'react';
 
 const ContactSection = () => {
   return (
-    <section className="section_gap py-16">
+    <section className="section_gap flex bg-background py-16">
       <div className="container mx-auto">
         <div className="relative h-80 mb-12">
           {/* Espace réservé pour l'intégration de la carte */}
@@ -17,25 +17,26 @@ const ContactSection = () => {
             {/* Pour une utilisation réelle, intégrez la carte ici */}
           </div>
         </div>
+
         <div className="flex flex-wrap">
           <div className="lg:w-1/4 md:w-1/2">
             <div className="contact_info">
               <div className="info_item mb-6">
-                <FontAwesomeIcon icon={faHouse} className="ti-home text-2xl text-gray-600 mb-2"/>
-                <h6 className="text-lg font-semibold">Californie, États-Unis</h6>
-                <p>Boulevard de Santa Monica</p>
+                <FontAwesomeIcon icon={faHouse} className="ti-home text-2xl text-gray-600 mb-2" />
+                <h6 className="text-lg font-semibold">Antananarivo, Madagascar</h6>
+                <p>Ivandry Ambodivoanjo</p>
               </div>
               <div className="info_item mb-6">
-                <FontAwesomeIcon icon={faHeadphonesSimple} className="ti-home text-2xl text-gray-600 mb-2"/>
+                <FontAwesomeIcon icon={faHeadphonesSimple} className="ti-home text-2xl text-gray-600 mb-2" />
                 <h6>
-                  <a href="tel:+4409865562" className="text-blue-500 hover:underline">00 (440) 9865 562</a>
+                  <a href="tel:+261349617885" className="text-blue-500 hover:underline">+261 34 96 178 85</a>
                 </h6>
                 <p>Lun. au Ven. 9h à 18h</p>
               </div>
               <div className="info_item mb-6">
                 <FontAwesomeIcon icon={faEnvelope} className="ti-home text-2xl text-gray-600 mb-2"/>
                 <h6>
-                  <a href="mailto:support@colorlib.com" className="text-blue-500 hover:underline">support@colorlib.com</a>
+                  <a href="mailto:contact@pulse.com" className="text-blue-500 hover:underline">contact@pulse.com</a>
                 </h6>
                 <p>Envoyez-nous votre demande à tout moment !</p>
               </div>
@@ -81,7 +82,27 @@ const ContactSection = () => {
                     />
                   </div>
                 </div>
-                <div className="w-full md:w-1/2 pl-2">
+                <div className="form-group mb-4">
+                  <input
+                    type="email"
+                    className="form-control w-full p-3 border border-gray-300 rounded"
+                    id="email"
+                    name="email"
+                    placeholder="Enter email address"
+                    required
+                  />
+                </div>
+                <div className="form-group mb-4">
+                  <input
+                    type="text"
+                    className="form-control w-full p-3 border border-gray-300 rounded"
+                    id="subject"
+                    name="subject"
+                    placeholder="Enter Subject"
+                    required
+                  />
+                </div>
+                <div className="">
                   <div className="form-group mb-4">
                     <textarea
                       className="form-control w-full p-3 border border-gray-300 rounded"
@@ -93,8 +114,7 @@ const ContactSection = () => {
                     ></textarea>
                   </div>
                 </div>
-              </div>
-              <div className="text-right">
+                <div className="text-right">
                 <button
                   type="submit"
                   value="submit"
@@ -103,6 +123,8 @@ const ContactSection = () => {
                   Envoyer le Message
                 </button>
               </div>
+              </div>
+             
             </form>
           </div>
         </div>

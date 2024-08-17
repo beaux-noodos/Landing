@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 const testimonials = [
   {
     image: 'img/testimonials/t1.jpg',
-    name: 'Elite Martin',
-    testimonial: 'Lui, ne pouvant pas appeler, a été vaincu. Il ne pourra pas diviser là, il y a des poissons mâles, des bêtes, il est de son jour, troisième graine, sixième mer jusqu\'à. Vu de',
+    name: 'Judicael Randriamanjato',
+    testimonial: 'Une expérience exceptionnelle ! Les projets sont innovants et ont largement dépassé mes attentes. Je le recommande vivement !',
   },
   {
-    image: 'img/testimonials/t2.jpg',
-    name: 'Davil Saden',
-    testimonial: 'Lui, ne pouvant pas appeler, a été vaincu. Il ne pourra pas diviser là, il y a des poissons mâles, des bêtes, il est de son jour, troisième graine, sixième mer jusqu\'à. Vu de',
+    image: 'images/Nathanael.jpg',
+    name: 'Nathanaël Fanomezana',
+    testimonial: 'Les solutions proposées ont vraiment fait la différence pour moi. Leur approche personnalisée et leur soutien sont inégalés.',
   },
   // Ajoutez d'autres témoignages si nécessaire
 ];
@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
         >
           <h2 className="text-3xl font-bold mb-3 text-primaryGreen">Ce que disent les clients</h2>
           <p className="text-gray-600">
-            Renouveler l'homme a rassemblé des lumières, vous verrez
+            Voyez comment nos projets ont transformé leur expérience et pourquoi ils continuent de nous applaudir
           </p>
         </motion.div>
         <motion.div

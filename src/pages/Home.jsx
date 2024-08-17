@@ -10,9 +10,11 @@ export const Home = () => {
   return (
     <>
       <ToTheTop />
-      <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo.png' />
+      <div className="flex justify-center">
+        <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo.png' />
+      </div>
       <HomeBanner />
-      <Features bg='bg-background' titleColor='text-secondaryGreen'/>
+      <Features bg='bg-background' titleColor='text-secondaryGreen' />
       <PopularProject bg='bg-primaryGreen' textColor='text-background' />
       <TestimonialsSection />
       <Footer />
