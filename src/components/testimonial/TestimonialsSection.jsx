@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 const testimonials = [
   {
     image: 'img/testimonials/t1.jpg',
-    name: 'Elite Martin',
-    testimonial: 'Him, made can\'t called over won\'t there on divide there male fish beast own his day third seed sixth seas unto. Saw from',
+    name: 'Judicael Randriamanjato',
+    testimonial: 'An exceptional experience! The projects are innovative and far exceeded my expectations. I highly recommend it!',
   },
   {
-    image: 'img/testimonials/t2.jpg',
-    name: 'Davil Saden',
-    testimonial: 'Him, made can\'t called over won\'t there on divide there male fish beast own his day third seed sixth seas unto. Saw from',
+    image: 'images/Nathanael.jpg',
+    name: 'Nathanaël Fanomezana',
+    testimonial: 'The solutions offered really made the difference for me. Their personalized approach and support are second to none.',
   },
   // Add more testimonials as needed
 ];
@@ -26,9 +26,9 @@ const TestimonialsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold mb-3 text-primaryGreen">Client say about me</h2>
+          <h2 className="text-3xl font-bold mb-3 text-primaryGreen">Client say about us</h2>
           <p className="text-gray-600">
-            Replenish man have thing gathering lights yielding shall you
+            See how our projects have transformed their experience and why they keep applauding us
           </p>
         </motion.div>
         <motion.div
