@@ -7,8 +7,6 @@ import { Project } from './pages/Project';
 import { Contact } from './pages/Contact';
 import { ProjectDetails } from './pages/ProjectDetails';
 
-
-
 function App() {
     return (
         <>
@@ -30,7 +28,7 @@ function App() {
                     element={<Contact/>}
                 />
                 <Route
-                    path='/project-details'
+                    path='/projects/:id'
                     element={<ProjectDetails/>}
                 />  
                 <Route path='/' element={<Navigate to='/home' replace/>}/>
