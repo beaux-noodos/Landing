@@ -11,7 +11,7 @@ export const About = () => {
     <>
       <ToTheTop />
       <Navbar bg='bg-background' linkColor='text-primaryBrown' logo='img/logo2.png' />
-      <Banner title='About us' link='About Us' />
+      <Banner title='About us' link='About-us' />
       <AboutSection />
       <Features bg='bg-primaryGreen' titleColor='text-white'/>
       <TestimonialsSection />
