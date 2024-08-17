@@ -41,7 +41,7 @@ const Banner = ({ title, link }) => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: false, amount: 0.1 }}
         >
-          <a href="/" className="text-white hover:text-gray-300">Home</a>
+          <a href="/" className="text-white hover:text-gray-300">Accueil</a>
           <span className="text-white mx-2">/</span>
           <a href="#" className="text-white hover:text-gray-300">{link}</a>
         </motion.div>

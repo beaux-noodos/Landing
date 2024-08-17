@@ -1,4 +1,3 @@
-// src/components/Countdown.jsx
 import React, { useState, useEffect } from 'react';
 
 const Countdown = () => {
@@ -30,25 +29,25 @@ const Countdown = () => {
       <div className="py-9 px-5 border bg-white bg-opacity-20 rounded-lg shadow-lg">
         <h1 className="text-4xl font-bold w-28">
           {timeLeft.days}
-          <span className="text-sm ml-2">Days</span>
+          <span className="text-sm ml-2">Jours</span>
         </h1>
       </div>
       <div className="py-9 px-5 border bg-white bg-opacity-20 rounded-lg shadow-lg">
         <h1 className="text-4xl font-bold w-28">
           {timeLeft.hours}
-          <span className="text-sm ml-2">Hours</span>
+          <span className="text-sm ml-2">Heures</span>
         </h1>
       </div>
       <div className="py-9 px-5 border bg-white bg-opacity-20 rounded-lg shadow-lg">
         <h1 className="text-4xl font-bold w-28">
           {timeLeft.minutes}
-          <span className="text-sm ml-2">Mins</span>
+          <span className="text-sm ml-2">Minutes</span>
         </h1>
       </div>
       <div className="py-9 px-5 border bg-white bg-opacity-20 rounded-lg shadow-lg">
         <h1 className="text-4xl font-bold w-28">
           {timeLeft.seconds}
-          <span className="text-sm ml-2">Secs</span>
+          <span className="text-sm ml-2">Secondes</span>
         </h1>
       </div>
     </div>

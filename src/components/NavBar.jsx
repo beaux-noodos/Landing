@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+const url = "192.168.0.xxx:5173/login";
 const Navbar = ({ bg, linkColor, logo }) => {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,8 +39,7 @@ const Navbar = ({ bg, linkColor, logo }) => {
 
   return (
     <>
-      <nav className={`w-5/6 fixed flex backdrop-blur-sm bg-[#344E41] bg-opacity-30 lg:ml-32 ml-8 items-center justify-between px-6 py-1 mt-4 transition-all duration-300 rounded-full z-40 `}
-      >
+      <nav className={`w-5/6 fixed flex backdrop-blur-sm bg-[#344E41] bg-opacity-30 lg:ml-32 ml-8 items-center justify-between px-6 py-1 mt-4 transition-all duration-300 rounded-full z-40`}>
         <Link to="/home#banner" className="flex items-center text-primaryGreen font-bold text-xl lg:mr-96">
           Logo
         </Link>
@@ -49,11 +49,11 @@ const Navbar = ({ bg, linkColor, logo }) => {
         <div
           className={`hidden lg:flex lg:items-center lg:space-x-11 font-semibold text-background`}
         >
-          <Link to="/home#banner" className={getLinkClass('/home')}>Home</Link>
-          <Link to="/about-us#banner" className={getLinkClass('/about-us')}>About</Link>
-          <Link to="/projects#banner" className={getLinkClass('/projects')}>Projects</Link>
+          <Link to="/home#banner" className={getLinkClass('/home')}>Accueil</Link>
+          <Link to="/about-us#banner" className={getLinkClass('/about-us')}>À Propos</Link>
+          <Link to="/projects#banner" className={getLinkClass('/projects')}>Projets</Link>
           <Link to="/contact#banner" className={getLinkClass('/contact')}>Contact</Link>
-          <Link to="#"> <FontAwesomeIcon className='text-background hover:text-primaryGreen bg-primaryGreen hover:bg-background p-1.5 rounded-full' icon={faUser} /></Link>
+          <Link to={url}> <FontAwesomeIcon className='text-background hover:text-primaryGreen bg-primaryGreen hover:bg-background p-1.5 rounded-full' icon={faUser} /></Link>
         </div>
       </nav>
       <ul className={`fixed h-screen w-full bg-primaryGreen text-background pt-1 transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-50`}>
@@ -63,19 +63,19 @@ const Navbar = ({ bg, linkColor, logo }) => {
           </button>
         </li>
         <li className={`pl-3 py-2 ${getLinkClassToggle('/home')}`} onClick={toggleMenu}>
-          <Link to="/home#banner">Home</Link>
+          <Link to="/home#banner">Accueil</Link>
         </li>
         <li className={`pl-3 py-2 ${getLinkClassToggle('/about-us')}`} >
-          <Link to="/about-us#banner" onClick={toggleMenu}>About</Link>
+          <Link to="/about-us#banner" onClick={toggleMenu}>À Propos</Link>
         </li>
         <li className={`pl-3 py-2 ${getLinkClassToggle('/projects')}`} >
-          <Link to="/projects#banner" onClick={toggleMenu}>Projects</Link>
+          <Link to="/projects#banner" onClick={toggleMenu}>Projets</Link>
         </li>
         <li className={`pl-3 py-2 ${getLinkClassToggle('/contact')}`}>
           <Link to="/contact#banner" onClick={toggleMenu}>Contact</Link>
         </li>
         <li className={`pl-3 py-2 ${getLinkClassToggle('/t')}`}>
-          <Link to="/t"  onClick={toggleMenu}>Sign In</Link>
+          <Link to="/t" onClick={toggleMenu}>Se Connecter</Link>
         </li>
       </ul>
     </>

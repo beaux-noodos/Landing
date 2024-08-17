@@ -1,4 +1,3 @@
-// src/components/EventCard.jsx
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,8 +20,8 @@ const ProjectCard = ({ id, image_url, creation_datetime, start_datetime, end_dat
     const monthNumber = datetime.split('-')[1];
 
     const monthNames = [
-      "Jan", "Feb", "Mar", "Apr", "May", "June",
-      "July", "Aug", "Sept", "Oct", "Nov", "Dec"
+      "Janv", "Fév", "Mar", "Avr", "Mai", "Juin",
+      "Juil", "Août", "Sept", "Oct", "Nov", "Déc"
     ];
 
     const monthIndex = parseInt(monthNumber, 10) - 1;
@@ -53,17 +52,15 @@ const ProjectCard = ({ id, image_url, creation_datetime, start_datetime, end_dat
             <span className='text-primary font-bold text-3xl'>{getDayFromDatetime(creation_datetime)}</span> {getMonthFromDatetime(creation_datetime)}
           </div>
           <div className='flex flex-col pl-3 gap-2'>
-            <p><FontAwesomeIcon icon={faClock} className='mr-2 text-sm' />{getDateFromDatetime(start_datetime)} to {getDateFromDatetime(end_datetime)} </p>
+            <p><FontAwesomeIcon icon={faClock} className='mr-2 text-sm' />{getDateFromDatetime(start_datetime)} au {getDateFromDatetime(end_datetime)} </p>
             <p><FontAwesomeIcon icon={faLocationDot} className='mr-2 text-sm' />{localisation.name}</p>
           </div>
         </div>
         <p className='mb-4'>{title}</p>
         <button onClick={handleViewDetails} className='bg-primaryGreen hover:bg-secondaryBrown text-background text-xs font-semibold px-12 py-4 '>
-          VIEW DETAILS
+          VOIR LES DÉTAILS
         </button>
       </div>
-
-
     </div>
   );
 };

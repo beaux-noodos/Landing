@@ -5,54 +5,54 @@ const Footer = () => {
     <footer className="footer-area section_gap bg-primaryGreen text-background py-8">
       <div className="container mx-auto">
         <div className="flex flex-wrap">
-          {/* Top Products */}
+          {/* Produits Principaux */}
           <div className="lg:w-1/6 md:w-1/2 p-4">
-            <h4 className="text-lg font-semibold mb-4">Top Products</h4>
+            <h4 className="text-lg font-semibold mb-4">Produits Principaux</h4>
             <ul className="space-y-2 text-background">
-              <li><a href="#" className="hover:text-gray-400">Managed Website</a></li>
-              <li><a href="#" className="hover:text-gray-400">Manage Reputation</a></li>
-              <li><a href="#" className="hover:text-gray-400">Power Tools</a></li>
-              <li><a href="#" className="hover:text-gray-400">Marketing Service</a></li>
+              <li><a href="#" className="hover:text-gray-400">Site Web Géré</a></li>
+              <li><a href="#" className="hover:text-gray-400">Gestion de la Réputation</a></li>
+              <li><a href="#" className="hover:text-gray-400">Outils de Puissance</a></li>
+              <li><a href="#" className="hover:text-gray-400">Service Marketing</a></li>
             </ul>
           </div>
 
-          {/* Quick Links */}
+          {/* Liens Rapides */}
           <div className="lg:w-1/6 md:w-1/2 p-4">
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4">Liens Rapides</h4>
             <ul className="space-y-2 text-background">
-              <li><a href="#" className="hover:text-gray-400">Jobs</a></li>
-              <li><a href="#" className="hover:text-gray-400">Brand Assets</a></li>
-              <li><a href="#" className="hover:text-gray-400">Investor Relations</a></li>
-              <li><a href="#" className="hover:text-gray-400">Terms of Service</a></li>
+              <li><a href="#" className="hover:text-gray-400">Emplois</a></li>
+              <li><a href="#" className="hover:text-gray-400">Actifs de Marque</a></li>
+              <li><a href="#" className="hover:text-gray-400">Relations avec les Investisseurs</a></li>
+              <li><a href="#" className="hover:text-gray-400">Conditions de Service</a></li>
             </ul>
           </div>
 
-          {/* Features */}
+          {/* Fonctionnalités */}
           <div className="lg:w-1/6 md:w-1/2 p-4">
-            <h4 className="text-lg font-semibold mb-4">Features</h4>
+            <h4 className="text-lg font-semibold mb-4">Fonctionnalités</h4>
             <ul className="space-y-2 text-background">
-              <li><a href="#" className="hover:text-gray-400">Jobs</a></li>
-              <li><a href="#" className="hover:text-gray-400">Brand Assets</a></li>
-              <li><a href="#" className="hover:text-gray-400">Investor Relations</a></li>
-              <li><a href="#" className="hover:text-gray-400">Terms of Service</a></li>
+              <li><a href="#" className="hover:text-gray-400">Emplois</a></li>
+              <li><a href="#" className="hover:text-gray-400">Actifs de Marque</a></li>
+              <li><a href="#" className="hover:text-gray-400">Relations avec les Investisseurs</a></li>
+              <li><a href="#" className="hover:text-gray-400">Conditions de Service</a></li>
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Ressources */}
           <div className="lg:w-1/6 md:w-1/2 p-4">
-            <h4 className="text-lg font-semibold mb-4">Resources</h4>
+            <h4 className="text-lg font-semibold mb-4">Ressources</h4>
             <ul className="space-y-2 text-background">
               <li><a href="#" className="hover:text-gray-400">Guides</a></li>
-              <li><a href="#" className="hover:text-gray-400">Research</a></li>
+              <li><a href="#" className="hover:text-gray-400">Recherche</a></li>
               <li><a href="#" className="hover:text-gray-400">Experts</a></li>
-              <li><a href="#" className="hover:text-gray-400">Agencies</a></li>
+              <li><a href="#" className="hover:text-gray-400">Agences</a></li>
             </ul>
           </div>
 
           {/* Newsletter */}
           <div className="lg:w-2/6 md:w-1/2 p-4">
             <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
-            <p className="mb-4 text-background">You can trust us. We only send promo offers.</p>
+            <p className="mb-4 text-background">Vous pouvez nous faire confiance. Nous envoyons uniquement des offres promotionnelles.</p>
             <form
               target="_blank"
               action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -62,14 +62,14 @@ const Footer = () => {
               <input
                 className="form-control w-full p-2 rounded-l-md border-none"
                 name="EMAIL"
-                placeholder="Your Email Address"
+                placeholder="Votre Adresse E-mail"
                 onFocus={(e) => e.target.placeholder = ''}
-                onBlur={(e) => e.target.placeholder = 'Your Email Address'}
+                onBlur={(e) => e.target.placeholder = 'Votre Adresse E-mail'}
                 required
                 type="email"
               />
               <button className="click-btn btn btn-default bg-primary text-secondary p-2 rounded-r-md">
-                <span>Subscribe</span>
+                <span>Abonnez-vous</span>
               </button>
               <div style={{ position: 'absolute', left: '-5000px' }}>
                 <input

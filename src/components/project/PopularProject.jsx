@@ -25,7 +25,7 @@ const PopularProject = ({ bg, textColor }) => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>Chargement...</div>;
   }
 
   return (
@@ -39,10 +39,10 @@ const PopularProject = ({ bg, textColor }) => {
           viewport={{ once: false, amount: 0.1 }}
         >
           <h2 className={`text-3xl font-bold mb-3 ${textColor}`}>
-            Popular Projects
+            Projets Populaires
           </h2>
           <p className="text-gray-400">
-            Replenish man have thing gathering lights yielding shall you
+            Réapprovisionner l'homme a des choses rassemblant des lumières
           </p>
         </motion.div>
         <motion.div
@@ -72,7 +72,7 @@ const PopularProject = ({ bg, textColor }) => {
             href="#"
             className={`event-link flex items-center justify-center ${textColor} hover:scale-105`}
           >
-            VIEW MORE PROJECTS{" "}
+            VOIR PLUS DE PROJETS{" "}
             <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
           </a>
         </motion.div>

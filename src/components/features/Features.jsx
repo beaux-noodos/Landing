@@ -11,19 +11,19 @@ import { motion } from "framer-motion";
 const features = [
   {
     icon: faHandHoldingDollar,
-    title: "Personalized Recommendations",
+    title: "Recommandations Personnalisées",
     description:
-      "Receive project suggestions tailored to your interests, based on your past investments and preferences.",
+      "Recevez des suggestions de projets adaptées à vos intérêts, basées sur vos investissements passés et vos préférences.",
   },
   {
     icon: faEarth,
-    title: "Real-time Project Tracking",
+    title: "Suivi des Projets en Temps Réel",
     description:
-      "Track the progress of your investment projects at a glance: progress, number of likes, completion date, and much more.",
+      "Suivez la progression de vos projets d'investissement en un coup d'œil : progression, nombre de likes, date d'achèvement, et bien plus encore.",
   },
   {
     icon: faMessage,
-    title: "Integrated AI Assistant",
+    title: "Assistant IA Intégré",
     description:
       "Un chat intelligent qui répond à toutes vos questions sur l'application et vous aide à trouver rapidement les projets qui vous intéressent.",
   },
@@ -42,16 +42,16 @@ const Features = ({ bg, titleColor }) => {
               transition={{ duration: 0.6, ease: "easeInOut" }}
               viewport={{ once: false, amount: 0.1 }}
             >
-              Awesome Features
+              Fonctionnalités Clés
             </motion.h2>
             <motion.p
               className="text-gray-400"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeInOut" ,delay:0.2}}
+              transition={{ duration: 0.6, ease: "easeInOut", delay: 0.2 }}
               viewport={{ once: false, amount: 0.1 }}
             >
-              Everything you need to finance easily and efficiently
+              Tout ce dont vous avez besoin pour financer facilement et efficacement
             </motion.p>
           </div>
         </div>
