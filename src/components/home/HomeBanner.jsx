@@ -46,7 +46,7 @@ const HomeBanner = () => {
             INVEST IN A BETTER TOMORROW
           </motion.h2>
           <motion.div
-            className="flex flex-col lg:flex-row gap-4 justify-center"
+            className="flex flex-col lg:flex-row gap-4 items-center justify-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}

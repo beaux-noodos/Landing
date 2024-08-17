@@ -38,7 +38,7 @@ const Navbar = ({ bg, linkColor, logo }) => {
 
   return (
     <>
-      <nav className={`w-5/6 fixed flex backdrop-blur-sm bg-[#344E41] bg-opacity-30 lg:ml-32 ml-8 justify-between px-6 py-1 mt-4 transition-all duration-300 rounded-full z-40 `}
+      <nav className={`w-5/6 fixed flex backdrop-blur-sm bg-[#344E41] bg-opacity-30 lg:ml-32 ml-8 items-center justify-between px-6 py-1 mt-4 transition-all duration-300 rounded-full z-40 `}
       >
         <Link to="/home#banner" className="flex items-center text-primaryGreen font-bold text-xl lg:mr-96">
           Logo
