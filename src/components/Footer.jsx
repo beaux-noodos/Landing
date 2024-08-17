@@ -68,7 +68,7 @@ const Footer = () => {
                 required
                 type="email"
               />
-              <button className="click-btn btn btn-default bg-primary text-secondary p-2 rounded-r-md">
+              <button className="click-btn btn btn-default bg-secondaryBrown hover:bg-primaryBrown text-background p-2 rounded-r-md">
                 <span>Subscribe</span>
               </button>
               <div style={{ position: 'absolute', left: '-5000px' }}>
