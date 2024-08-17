@@ -6,14 +6,14 @@ const testimonials = [
   {
     image: 'img/testimonials/t1.jpg',
     name: 'Judicael Randriamanjato',
-    testimonial: 'An exceptional experience! The projects are innovative and far exceeded my expectations. I highly recommend it!',
+    testimonial: 'Une expérience exceptionnelle ! Les projets sont innovants et ont largement dépassé mes attentes. Je le recommande vivement !',
   },
   {
     image: 'images/Nathanael.jpg',
     name: 'Nathanaël Fanomezana',
-    testimonial: 'The solutions offered really made the difference for me. Their personalized approach and support are second to none.',
+    testimonial: 'Les solutions proposées ont vraiment fait la différence pour moi. Leur approche personnalisée et leur soutien sont inégalés.',
   },
-  // Add more testimonials as needed
+  // Ajoutez d'autres témoignages si nécessaire
 ];
 
 const TestimonialsSection = () => {
@@ -26,9 +26,9 @@ const TestimonialsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold mb-3 text-primaryGreen">Client say about us</h2>
+          <h2 className="text-3xl font-bold mb-3 text-primaryGreen">Ce que disent les clients</h2>
           <p className="text-gray-600">
-            See how our projects have transformed their experience and why they keep applauding us
+            Voyez comment nos projets ont transformé leur expérience et pourquoi ils continuent de nous applaudir
           </p>
         </motion.div>
         <motion.div

@@ -7,6 +7,17 @@ const ContactSection = () => {
   return (
     <section className="section_gap flex bg-background py-16">
       <div className="container mx-auto">
+        <div className="relative h-80 mb-12">
+          {/* Espace réservé pour l'intégration de la carte */}
+          <div
+            id="mapBox"
+            className="absolute inset-0 bg-gray-200"
+          // Envisager l'intégration de la carte ici
+          >
+            {/* Pour une utilisation réelle, intégrez la carte ici */}
+          </div>
+        </div>
+
         <div className="flex flex-wrap">
           <div className="lg:w-1/4 md:w-1/2">
             <div className="contact_info">
@@ -20,14 +31,14 @@ const ContactSection = () => {
                 <h6>
                   <a href="tel:+261349617885" className="text-blue-500 hover:underline">+261 34 96 178 85</a>
                 </h6>
-                <p>Mon to Fri 8am to 5 pm</p>
+                <p>Lun. au Ven. 9h à 18h</p>
               </div>
               <div className="info_item mb-6">
-                <FontAwesomeIcon icon={faEnvelope} className="ti-home text-2xl text-gray-600 mb-2" />
+                <FontAwesomeIcon icon={faEnvelope} className="ti-home text-2xl text-gray-600 mb-2"/>
                 <h6>
                   <a href="mailto:contact@pulse.com" className="text-blue-500 hover:underline">contact@pulse.com</a>
                 </h6>
-                <p>Send us your query anytime!</p>
+                <p>Envoyez-nous votre demande à tout moment !</p>
               </div>
             </div>
           </div>
@@ -38,16 +49,38 @@ const ContactSection = () => {
               method="post"
               id="contactForm"
             >
-              <div className="flex flex-col w-1/2 mb-6">
-                <div className="form-group mb-4">
-                  <input
-                    type="text"
-                    className="form-control w-full p-3 border border-gray-300 rounded"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name"
-                    required
-                  />
+              <div className="flex flex-wrap mb-6">
+                <div className="w-full md:w-1/2 pr-2">
+                  <div className="form-group mb-4">
+                    <input
+                      type="text"
+                      className="form-control w-full p-3 border border-gray-300 rounded"
+                      id="name"
+                      name="name"
+                      placeholder="Entrez votre nom"
+                      required
+                    />
+                  </div>
+                  <div className="form-group mb-4">
+                    <input
+                      type="email"
+                      className="form-control w-full p-3 border border-gray-300 rounded"
+                      id="email"
+                      name="email"
+                      placeholder="Entrez votre adresse email"
+                      required
+                    />
+                  </div>
+                  <div className="form-group mb-4">
+                    <input
+                      type="text"
+                      className="form-control w-full p-3 border border-gray-300 rounded"
+                      id="subject"
+                      name="subject"
+                      placeholder="Entrez l'objet"
+                      required
+                    />
+                  </div>
                 </div>
                 <div className="form-group mb-4">
                   <input
@@ -76,7 +109,7 @@ const ContactSection = () => {
                       name="message"
                       id="message"
                       rows="4"
-                      placeholder="Enter Message"
+                      placeholder="Entrez votre message"
                       required
                     ></textarea>
                   </div>
@@ -87,7 +120,7 @@ const ContactSection = () => {
                   value="submit"
                   className="btn primary-btn bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600"
                 >
-                  Send Message
+                  Envoyer le Message
                 </button>
               </div>
               </div>

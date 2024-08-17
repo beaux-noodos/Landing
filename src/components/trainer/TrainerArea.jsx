@@ -7,8 +7,8 @@ const trainers = [
   {
     image: 'img/trainer/t1.jpg',
     name: 'Mated Nithan',
-    designation: 'Sr. web designer',
-    description: 'If you are looking at blank cassettes on the web, you may be very confused at the.',
+    designation: 'Designer web Sr.',
+    description: 'Si vous regardez des cassettes vides sur le web, vous pourriez être très confus.',
     socialLinks: [
       { href: '#', icon: faFacebookF },
       { href: '#', icon: faXTwitter },
@@ -19,8 +19,8 @@ const trainers = [
   {
     image: 'img/trainer/t2.jpg',
     name: 'David Cameron',
-    designation: 'Sr. web designer',
-    description: 'If you are looking at blank cassettes on the web, you may be very confused at the.',
+    designation: 'Designer web Sr.',
+    description: 'Si vous regardez des cassettes vides sur le web, vous pourriez être très confus.',
     socialLinks: [
       { href: '#', icon: faFacebookF },
       { href: '#', icon: faXTwitter },
@@ -31,8 +31,8 @@ const trainers = [
   {
     image: 'img/trainer/t3.jpg',
     name: 'Jain Redmel',
-    designation: 'Sr. Faculty Data Science',
-    description: 'If you are looking at blank cassettes on the web, you may be very confused at the.',
+    designation: 'Professeur Sr. en Science des données',
+    description: 'Si vous regardez des cassettes vides sur le web, vous pourriez être très confus.',
     socialLinks: [
       { href: '#', icon: faFacebookF },
       { href: '#', icon: faXTwitter },
@@ -43,8 +43,8 @@ const trainers = [
   {
     image: 'img/trainer/t4.jpg',
     name: 'Nathan Macken',
-    designation: 'Sr. web designer',
-    description: 'If you are looking at blank cassettes on the web, you may be very confused at the.',
+    designation: 'Designer web Sr.',
+    description: 'Si vous regardez des cassettes vides sur le web, vous pourriez être très confus.',
     socialLinks: [
       { href: '#', icon: faFacebookF },
       { href: '#', icon: faXTwitter },
@@ -62,11 +62,11 @@ const TrainerArea = () => {
           className="text-center mb-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6,ease: "easeInOut" }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
         >
-          <h2 className="text-4xl font-bold mb-4">Our Expert Trainers</h2>
+          <h2 className="text-4xl font-bold mb-4">Nos Formateurs Experts</h2>
           <p className="text-gray-600">
-            Replenish man have thing gathering lights yielding shall you
+            Répétez les lumières rassemblées, vous verrez
           </p>
         </motion.div>
         <div className="flex flex-wrap justify-center gap-7">

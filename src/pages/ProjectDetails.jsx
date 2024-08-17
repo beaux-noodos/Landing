@@ -11,6 +11,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+const url="192.168.0.xxx:5173/login"
 export const ProjectDetails = () => {
     const { id } = useParams();
     const [project, setProject] = useState(null);
@@ -71,7 +72,7 @@ export const ProjectDetails = () => {
                         transition={{ duration: 0.6, ease: "easeInOut" }}
                     >
                         <ProjectInfo {...project} />
-                        <a href="#" className="block text-center border border-secondary bg-secondary hover:bg-transparent text-white hover:text-secondary text-xs font-semibold py-4 mb-8">
+                        <a href={url} className="block text-center border border-secondary bg-secondary hover:bg-transparent text-white hover:text-secondary text-xs font-semibold py-4 mb-8">
                             INVEST
                         </a>
                     </motion.div>

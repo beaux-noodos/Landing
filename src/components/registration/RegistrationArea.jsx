@@ -11,12 +11,12 @@ const RegistrationArea = () => {
           className="lg:w-7/12"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6,ease: "easeInOut"}}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
         >
           <div className="text-center lg:text-left mb-12 lg:mb-0">
-            <h1 className="text-4xl font-bold mb-4">Register Now</h1>
+            <h1 className="text-4xl font-bold mb-4">Inscrivez-vous maintenant</h1>
             <p>
-              There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station.
+              Il arrive un moment dans la vie de tout astronome en herbe où il est temps d'acheter ce premier télescope. C’est excitant de penser à mettre en place votre propre station d'observation.
             </p>
             <Countdown />
           </div>
@@ -25,7 +25,7 @@ const RegistrationArea = () => {
           className="lg:w-5/12 lg:ml-16 mt-12 lg:mt-0"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6,ease: "easeInOut", delay: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeInOut", delay: 0.2 }}
         >
           <RegistrationForm />
         </motion.div>

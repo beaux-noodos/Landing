@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+const url = "192.168.0.xxx:5173/login";
 const Navbar = ({ bg, linkColor, logo }) => {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,9 +52,9 @@ const Navbar = ({ bg, linkColor, logo }) => {
         <div
           className={`hidden lg:flex lg:items-center lg:space-x-11 font-semibold text-background`}
         >
-          <Link to="/home#banner" className={getLinkClass('/home')}>Home</Link>
-          <Link to="/about-us#banner" className={getLinkClass('/about-us')}>About</Link>
-          <Link to="/projects#banner" className={getLinkClass('/projects')}>Projects</Link>
+          <Link to="/home#banner" className={getLinkClass('/home')}>Accueil</Link>
+          <Link to="/about-us#banner" className={getLinkClass('/about-us')}>À Propos</Link>
+          <Link to="/projects#banner" className={getLinkClass('/projects')}>Projets</Link>
           <Link to="/contact#banner" className={getLinkClass('/contact')}>Contact</Link>
           <a href={appUrl}><FontAwesomeIcon className='text-background hover:text-primaryGreen bg-primaryGreen hover:bg-background p-1.5 rounded-full' icon={faUser} /></a>
         </div>
@@ -65,19 +66,19 @@ const Navbar = ({ bg, linkColor, logo }) => {
           </button>
         </li>
         <li className={`pl-3 py-2 ${getLinkClassToggle('/home')}`} onClick={toggleMenu}>
-          <Link to="/home#banner">Home</Link>
+          <Link to="/home#banner">Accueil</Link>
         </li>
         <li className={`pl-3 py-2 ${getLinkClassToggle('/about-us')}`} >
-          <Link to="/about-us#banner" onClick={toggleMenu}>About</Link>
+          <Link to="/about-us#banner" onClick={toggleMenu}>À Propos</Link>
         </li>
         <li className={`pl-3 py-2 ${getLinkClassToggle('/projects')}`} >
-          <Link to="/projects#banner" onClick={toggleMenu}>Projects</Link>
+          <Link to="/projects#banner" onClick={toggleMenu}>Projets</Link>
         </li>
         <li className={`pl-3 py-2 ${getLinkClassToggle('/contact')}`}>
           <Link to="/contact#banner" onClick={toggleMenu}>Contact</Link>
         </li>
         <li className={`pl-3 py-2 ${getLinkClassToggle('/t')}`}>
-          <a href={appUrl} onClick={toggleMenu}>Sign Up</a>
+          <a href={appUrl} onClick={toggleMenu}>Se Connecter</a>
         </li>
       </ul>
     </>

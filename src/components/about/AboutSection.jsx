@@ -1,4 +1,3 @@
-// src/components/AboutSection.jsx
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
@@ -18,7 +17,7 @@ const AboutSection = () => {
             transition={{ duration: 0.6, ease: "easeInOut", delay: 0.4 }}
           >
             <div className="relative w-full max-w-[540px] mx-auto lg:ml-24 mt-14">
-              <img className="img-fluid w-full h-auto " src="images/about-us.jpg" alt="About" />
+              <img className="img-fluid w-full h-auto " src="images/about-us.jpg" alt="À propos" />
             </div>
           </motion.div>
           <motion.div
@@ -29,15 +28,15 @@ const AboutSection = () => {
           >
             <div className="h_blog_text">
               <div className="text-left">
-                <h4 className="text-3xl font-bold mb-4 text-primaryGreen">Invest In A Better Tomorrow</h4>
+                <h4 className="text-3xl font-bold mb-4 text-primaryGreen">Investir pour un avenir meilleur</h4>
                 <p className="mb-8 text-gray-600">
-                  At <span className='text-primaryBrown font-bold'>PlanetPulse</span>, we believe in the power of collective commitment to transform the world. We connect passionate individuals with projects that make a difference, whether in the environment, sustainable agriculture, or social initiatives.
+                  Chez <span className='text-primaryBrown font-bold'>PlanetPulse</span>, nous croyons en la puissance de l'engagement collectif pour transformer le monde. Nous connectons des individus passionnés avec des projets qui font la différence, que ce soit dans l'environnement, l'agriculture durable ou les initiatives sociales.
                 </p>
                 <p className="mb-8 text-gray-600">
-                Our mission is clear: to enable everyone to invest in a brighter future. Together, let's build a better world, one project at a time.
+                Notre mission est claire : permettre à chacun d'investir dans un avenir meilleur. Ensemble, construisons un monde meilleur, un projet à la fois.
                 </p>
                 <a className="inline-flex items-center text-background bg-primaryGreen px-12 py-4 rounded-md hover:bg-secondaryBrown hover:text-background font-semibold text-xs" href={appUrl}>
-                  SIGN IN <FontAwesomeIcon className='ml-2' icon={faArrowRight} />
+                  Se connecter <FontAwesomeIcon className='ml-2' icon={faArrowRight} />
                 </a>
               </div>
             </div>
